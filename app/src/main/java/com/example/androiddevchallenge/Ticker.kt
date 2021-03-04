@@ -58,7 +58,7 @@ fun Ticker(
     suffix: String? = null,
     textStyle: TextStyle = TextStyle.Default,
 ) {
-    val rowModifier = if(shouldAnimate) {
+    val rowModifier = if (shouldAnimate) {
         modifier.animateContentSize(tickerLayoutResizeAnimationSpec)
     } else {
         modifier

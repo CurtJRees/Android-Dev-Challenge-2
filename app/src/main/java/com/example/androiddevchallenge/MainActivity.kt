@@ -16,7 +16,6 @@
 package com.example.androiddevchallenge
 
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.foundation.BorderStroke
@@ -135,7 +134,9 @@ fun CircleButton(text: String, onClick: () -> Unit, modifier: Modifier = Modifie
         Box(
             Modifier
                 .aspectRatio(1f)
-                .clickable(onClick = onClick), contentAlignment = Alignment.Center) {
+                .clickable(onClick = onClick),
+            contentAlignment = Alignment.Center
+        ) {
             Text(
                 text = text,
                 modifier = Modifier.padding(8.dp),
